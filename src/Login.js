@@ -39,7 +39,7 @@ class Login extends React.Component{
             e.preventDefault()
             const {username,password}=this.state
             //login code
-            if(username=="A" && password==="B"){
+            if(username=="Truexam" && password==="123"){
                 localStorage.setItem("token","any-random-value")
                 this.setState({
                     loggedIn: true
@@ -60,8 +60,6 @@ class Login extends React.Component{
                      <input type="text" placeholder="username" name="username" value={this.state.username} onChange={this.onChange} />
                      <br/>
                      <input type="password" placeholder="password" name="password" value={this.state.password} onChange={this.onChange} />
-                     <br/>
-                     {/* <input type="file" placeholder="Upload Image"  accept="image/*" /> */}
                      <br/>
                      <div className='btn-wrapper'>
                      <input className='submit-btn'  type="submit" />

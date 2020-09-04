@@ -1,39 +1,12 @@
-
-/* body{
-  background: url('./assets/bg.svg');
-  background-size: cover;
-  background-attachment:scroll;
-  background-repeat: no-repeat;
-} */
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 body{
-  /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  background-color: darkcyan; */
-  background: url('./assets/bg.svg');
+  background: url(/static/media/bg.e2c26917.svg);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-
 }
 
+
+/* AddTask Component */
 .previewComponent {
   padding: 10rem;
   display: flex;
@@ -55,6 +28,37 @@ body{
   width: 90px;
   height: 100px;
 }
+
+/* Task Button */
+.addtask-btn{
+  position: absolute;
+  left: 50%;
+  padding-top: 5rem;
+}
+.addtask-btn button {
+  border-radius: 4px;
+  background: #47cf73;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: 3px solid transparent;
+}
+
+.custom-file-upload{
+  border-radius: 4px;
+  background: #47cf73;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: 3px solid transparent;
+}
+.select-text{
+  font-size: 16px;
+  padding: 3px;
+
+}
+input#file-upload{
+  padding-bottom: 10px;
+}
+
 /* Logout Component */
 div.logout-container{
    padding: 3rem;
@@ -94,9 +98,8 @@ div.logout-container{
   align-items: center;
 }
 .btn-wrapper{
-  
-  DISPLAY: FLEX;
-  JUSTIFY-CONTENT: center;
+  display: flex;
+  justify-content: center;
 }
 input.submit-btn{
   padding: 5px;
@@ -136,27 +139,7 @@ input.submit-btn{
   border: 3px solid transparent;
 }
 
-/* Task Button */
-.addtask-btn{
-  position: absolute;
-  left: 50%;
-  padding-top: 5rem;
-}
-.addtask-btn button {
-  border-radius: 4px;
-  background: #47cf73;
-  padding: 5px 10px;
-  font-weight: 700;
-  border: 3px solid transparent;
-}
-
-.custom-file-upload{
-  border-radius: 4px;
-  background: #47cf73;
-  padding: 5px 10px;
-  font-weight: 700;
-  border: 3px solid transparent;
-}
+/* Buttons */
 
 button.submit-btn{
   border-radius: 4px;
@@ -189,9 +172,9 @@ button.login-btn  {
   box-shadow: 3px 6px rgba(0,0,0,0.2);
 
 }
-.select-text{
-  padding: 5rem;
-  color: white;
-  flex-wrap: wrap;
-  max-width: 100%;
+
+/* Move Content at Top */
+.move-top{
+  position: absolute;
+  top: -7rem;
 }

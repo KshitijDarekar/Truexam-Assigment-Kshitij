@@ -52,7 +52,7 @@ class AddTask extends React.Component {
   
       return (
         <div className="previewComponent">
-                          <Link className="logout-btn" to='/logout'><button type="button">Logout</button></Link>
+          <Link className="logout-btn" to='/logout'><button className='move-top' type="button">Logout</button></Link>
           <h1>Add Task and Upload your Image here</h1>
           <div className="form-container">
           <form onSubmit={(e)=>this._handleSubmit(e)}>
