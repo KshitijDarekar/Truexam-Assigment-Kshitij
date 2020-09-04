@@ -11,7 +11,7 @@ class Logout extends React.Component{
     render(){
         return(
         <div className='logout-container'>
-            <h1>You have been logged Out</h1>
+            <h1>You have been logged Out !</h1>
             <Link to='/'><button className="login-btn">Login</button></Link>
         </div>
         )

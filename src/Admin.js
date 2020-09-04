@@ -28,7 +28,7 @@ class Admin extends React.Component{
         <div >
                 <Link className="logout-btn" to='/logout'><button type="button">Logout</button></Link>
             <div className="home">
-            <h1 style={{color:'white'}}>This bootcamp has 3 different tracks -
+            <h1 style={{color:'darkslategrey'}}>This bootcamp has 3 different tracks -
                 Beginner, Intermediate and Advanced. A user (student) can create his account and register for
                 only one of these tracks.
             </h1>

@@ -53,7 +53,7 @@ class Login extends React.Component{
         }
         return(
             <div className="login">
-                <h1>Login</h1>
+                <h1 style={{color:'darkslategrey'}}>Login</h1>
 
                  <form onSubmit={this.submitForm}>
                      <img className="profile" src={require('./assets/profile.png')} width='200px' height='200px' />

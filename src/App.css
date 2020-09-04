@@ -93,9 +93,10 @@ div.logout-container{
 
 /* Profile Image of Login Form  */
 .profile{
-  padding-left: 4px;
+  padding-left: 1px;
   text-align: center;
   align-items: center;
+  border-style: ridge;
 }
 .btn-wrapper{
   display: flex;
