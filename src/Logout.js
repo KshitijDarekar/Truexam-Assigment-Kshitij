@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './App.css'
 class Logout extends React.Component{
     
     constructor(props){
@@ -9,9 +10,9 @@ class Logout extends React.Component{
     }
     render(){
         return(
-        <div>
+        <div className='logout-container'>
             <h1>You have been logged Out</h1>
-            <Link to='/'><button>Login</button></Link>
+            <Link to='/'><button className="login-btn">Login</button></Link>
         </div>
         )
         

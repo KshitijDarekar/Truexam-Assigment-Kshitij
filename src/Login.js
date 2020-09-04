@@ -4,6 +4,10 @@ import {useState} from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import {Redirect } from 'react-router-dom'
 
+
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button';
+
 class Login extends React.Component{
     constructor(props){
         super(props)
@@ -59,9 +63,11 @@ class Login extends React.Component{
                      <br/>
                      {/* <input type="file" placeholder="Upload Image"  accept="image/*" /> */}
                      <br/>
-                     <input type="submit" />
+                     <div className='btn-wrapper'>
+                     <input className='submit-btn'  type="submit" />
+                     </div>
                      
-                </form>   
+                </form>
             </div>
         )
     }

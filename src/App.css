@@ -26,8 +26,11 @@
   }
 } */
 body{
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  background-color: darkcyan;
+  /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-color: darkcyan; */
+  background: url('./assets/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -43,17 +46,20 @@ body{
 }
 .imgPreview{
   background-color: blanchedalmond;
-  max-width: 10px;
-  max-height: 20px;
+  max-width: 90px;
+  max-height: 100px;
   justify-content: center;
-
-  padding-top: 4 rem
-  ;
-
+  padding-top: 4 rem;
 }
-/* .image-review{
+.imgPreview img {
+  width: 90px;
+  height: 100px;
+}
+/* Logout Component */
+div.logout-container{
+   padding: 3rem;
+}
 
-} */
 .login{
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   width: 13rem;
@@ -67,12 +73,17 @@ body{
 
   text-shadow: 3px 6px rgba(50,50,70,0.2);
   box-shadow: 3px 6px rgba(0,0,0,0.2);
+
 }
   
   @media (max-width: 576px){
     .login { 
-       left:25%;
+       left:0;
        top:25%;
+  }
+  .image-review img{
+    left: 20% !important;
+    top: 38% !important;
   }
 }
 
@@ -82,35 +93,98 @@ body{
   text-align: center;
   align-items: center;
 }
+.btn-wrapper{
+  
+  DISPLAY: FLEX;
+  JUSTIFY-CONTENT: center;
+}
+input.submit-btn{
+  padding: 5px;
+  background: #444857;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 3px solid transparent;
+  justify-content: center
+  ;
+}
 
 /* Home Page after login */
 .home{
   padding: 5rem;
+  width: 100%;
 }
 
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
 /* Logout Button */
 .logout-btn{
   padding: 2rem;
   position: absolute;
   left: 80%;
 }
+.logout-btn button{
+  background: #444857;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 3px solid transparent;
+}
+
 /* Task Button */
 .addtask-btn{
   position: absolute;
   left: 50%;
   padding-top: 5rem;
 }
-.submit-btn{
-  position: absolute;
-  top: 75%;
+.addtask-btn button {
+  border-radius: 4px;
+  background: #47cf73;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: 3px solid transparent;
 }
 
+.custom-file-upload{
+  border-radius: 4px;
+  background: #47cf73;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: 3px solid transparent;
+}
+
+button.submit-btn{
+  border-radius: 4px;
+  background: #47cf73;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: 3px solid transparent;
+}
+button.login-btn  {
+  border-radius: 4px;
+  background: #47cf73;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: 3px solid transparent;
+
+}
+.submit-btn button {
+  border-radius: 4px;
+  background: #47cf73;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: 3px solid transparent;
+}
 /* form */
 .form-container{
   display: flex;
   flex-wrap: wrap;
-  background: aquamarine;
-  border-radius: 20px;
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);  border-radius: 20px;
   padding: 2rem;
   box-shadow: 3px 6px rgba(0,0,0,0.2);
 
