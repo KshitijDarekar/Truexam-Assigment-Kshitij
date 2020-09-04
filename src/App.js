@@ -17,7 +17,7 @@ function App(){
         <Route exact path="/admin" component={Admin}></Route>
         <Route exact path="/logout" component={Logout}></Route>
         <Route exact path="/addtask" component={AddTask}></Route>
-        <Route exact path="/demo" component={Display}></Route>
+        <Route exact path="/display" component={Display}></Route>
 
 
     </Switch>

@@ -1,5 +1,6 @@
-import React from "react"
-
+import React from "react";
+import {Link} from 'react-router-dom';
+import './App.css';
 
 function Display(){
     const url = localStorage.getItem('image-data')
@@ -10,11 +11,15 @@ function Display(){
         flex:'flex-wrap',
         position:'absolute',
         left:'50%',
-        top:'25%'
+        top:'25%',
+        borderWidth: '5px',
+        borderStyle: 'ridge',
+        padddingTop:'5rem'
     }
     return(
         <div className="image-review">
-            <h1 style={{textAlign:'center'}}>View the Uploaded Image Here</h1>
+            <Link className="logout-btn" to='/logout'><button  type="button">Logout</button></Link>
+            <h1 style={{textAlign:'center',color:'darkcyan',paddingTop:'4rem'}}>View the Uploaded Image Here</h1>
             <img style={style}  src={url} />
         </div>
         

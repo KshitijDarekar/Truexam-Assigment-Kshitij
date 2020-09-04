@@ -18,7 +18,7 @@ class AddTask extends React.Component {
       console.log('handle uploading-', this.state.file);
       localStorage.setItem("IMAGE",this.state.file);
       if(this.state.file){
-        this.props.history.push("/demo");   //Redirects from='/addtask/'  to='/demo/'
+        this.props.history.push("/display");   //Redirects from='/addtask/'  to='/demo/'
 
       }
     }
@@ -53,7 +53,7 @@ class AddTask extends React.Component {
       return (
         <div className="previewComponent">
           <Link className="logout-btn" to='/logout'><button className='move-top' type="button">Logout</button></Link>
-          <h1>Add Task and Upload your Image here</h1>
+          <h1 style={{color :'darkcyan'}}>Add Task and Upload your Image here</h1>
           <div className="form-container">
           <form onSubmit={(e)=>this._handleSubmit(e)}>
               
