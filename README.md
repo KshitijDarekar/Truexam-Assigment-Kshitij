@@ -1,6 +1,13 @@
 ## Please Note:
 Login Username : Truexam<br />
 Login Password : 123<br />
+Deploy Link:  [Click Here](https://truexam-assignment-kshitij.herokuapp.com/) <br />
+Short Description:<br/>
+The web app has a login page with currently one demo user registered, with the credentials(username and password)<br/>
+mentioned above.After logging in , the user can add a picture either from the device folder or capture through<br/>
+camera (if on mobile device) . After Uploading the image the user is redirectd to the display page where the uploaded<br/>
+image is retrieved and displayed.Currently the image is stored in the local storage , and  the login authentication<br/>
+is done through local web tokens. The same logic can be applied to get multiple images and tasks,and display them.<br/>  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

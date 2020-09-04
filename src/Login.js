@@ -1,12 +1,7 @@
 import React from 'react';
 import './App.css';
-import {useState} from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+
 import {Redirect } from 'react-router-dom'
-
-
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button';
 
 class Login extends React.Component{
     constructor(props){
@@ -49,7 +44,7 @@ class Login extends React.Component{
 
     render(){
         if(this.state.loggedIn){
-            return <Redirect to="/admin" />
+            return <Redirect to="/home" />
         }
         return(
             <div className="login">

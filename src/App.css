@@ -1,5 +1,5 @@
 body{
-  background: url(/static/media/bg.e2c26917.svg);
+  background: url('./assets/bg.svg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

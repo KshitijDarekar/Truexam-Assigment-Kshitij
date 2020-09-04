@@ -1,6 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { Redirect } from 'react-router-dom';
 import './App.css'
 import {Link} from 'react-router-dom'
 
@@ -14,7 +12,7 @@ class AddTask extends React.Component {
     // Redirect
     _handleSubmit(e) {
       e.preventDefault();
-      // TODO: do something with -> this.state.file
+      // Working with : this.state.file
       console.log('handle uploading-', this.state.file);
       localStorage.setItem("IMAGE",this.state.file);
       if(this.state.file){
